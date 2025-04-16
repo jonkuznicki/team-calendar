@@ -11,10 +11,15 @@
       margin: 40px 10px;
       padding: 0;
       font-family: Arial, sans-serif;
+      background: #f5f5f5;
     }
     #calendar {
       max-width: 900px;
       margin: 0 auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -29,19 +34,3 @@
       var calendar = new FullCalendar.Calendar(calendarEl, {
         initialView: 'dayGridMonth',
         headerToolbar: {
-          left: 'prev,next today',
-          center: 'title',
-          right: 'dayGridMonth,timeGridWeek,listWeek'
-        },
-        events: {
-          url: 'https://ical.sportsengine.com/v3/calendar/ical?uuid=0d2b9c33ffe44fa0a4f34ed50bd048a9&v=1744817068478',
-          format: 'ics'
-        }
-      });
-
-      calendar.render();
-    });
-  </script>
-
-</body>
-</html>
